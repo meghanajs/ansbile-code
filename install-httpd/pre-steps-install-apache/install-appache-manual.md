@@ -113,13 +113,39 @@ sudo apache2ctl configtest
 ```
  syntax=ok
 ```
-11. restart the apache2
-
-
-
-
-
-12. backup appche html path and code
-
+11. we have to add 
+```
+/etc/apache2/apache2.conf
+ServerName 127.0.0.1
+```
+12. restart the apaache2
+1.  backup appche html path and code
 ```
 ```
+### cronjob
+1. To create cronjob
+```
+crontab -e 
+```
+2. To get run the output for everyday or months
+```
+min hours date month year comand to execute
+```
+### tar commands
+1. To create tar file
+```
+tar -czf fliename.tar.gz filename
+```
+Example
+```
+tar -czf web-deployment.tar web-deployment
+```
+1. To open tar file
+```
+tar -xzf tarfile
+```
+Example
+```
+tar -xzf web-deployment.tar
+```
+
